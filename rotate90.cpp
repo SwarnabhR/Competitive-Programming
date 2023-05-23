@@ -43,7 +43,7 @@ int main()
     {
         for (int j = 0; j < n; j++)
         {
-            for (int k = n - 1; n > 0; n--)
+            for (int k = n - 1; k > 0; k--)
             {
                 matrix[i][j] = matrix[k][i];
             }
