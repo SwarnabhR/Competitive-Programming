@@ -92,8 +92,6 @@ int covertInfixToPostfix(char *expr)
             {
                 while (!isEmpty() && peek() != '[')
                     expr[++j] = pop();
-
-                // pops '['
                 pop();
             }
             if (expr[i] == '}')
