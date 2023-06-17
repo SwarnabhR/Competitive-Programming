@@ -1,21 +1,20 @@
 #include <iostream>
-#include <typeinfo>
-using namespace std;
 
 template <typename T>
-void printType(T value)
+T min(T a, T b)
 {
-    cout << "Type: " << typeid(value).name() << endl;
+    return (a > b) ? b : a;
 }
 
 int main()
 {
-    int num = 10;
-    double pi = 3.14;
-    string name = "John";
-    printType(num);
-    printType(pi);
-    printType(name);
+    int num1 = 10, num2 = 20;
+    double pi = 3.14, pi2 = 3.1416;
+
+    int minInt = min(num1, num2);
+    std::cout << "Min of " << num1 << " and " << num2 << " is: " << minInt << std::endl;
+    double minDouble = min(pi, pi2);
+    std::cout << "Min of " << pi << " and " << pi2 << " is: " << minDouble << std::endl;
 
     return 0;
 }
