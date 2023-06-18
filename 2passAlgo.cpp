@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-void sort012(int arr[], int n)
+int sort012(int arr[], int n)
 {
 
     int cnt0 = 0, cnt1 = 0, cnt2 = 0;
